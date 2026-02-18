@@ -180,36 +180,53 @@ section {
 /* About Section */
 .about-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    /* Side-by-side */
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 30px;
+    gap: 50px;
+    text-align: left;
+    /* Align text to left */
 }
 
 .about-img {
+    flex: 1;
+    /* Allow image container to be flexible */
+    display: flex;
+    justify-content: flex-end;
+    /* Align image to the right of its container */
+}
+
+.about-img img {
     width: auto;
-    max-width: 500px;
-    /* Reasonable limit, but larger */
+    max-width: 450px;
+    /* Reasonable limit */
     height: auto;
-    margin: 0 auto;
     display: block;
-    /* Ensure block for margin auto */
+    border-radius: 12px;
 }
 
 .about-img::after {
     display: none;
 }
 
-.about-img img {
-    /* Image fills the container, which is now sized by content/max-width */
-    display: block;
-    width: 100%;
-    height: auto;
+.about-text {
+    flex: 1;
+    /* Allow text to take up remaining space */
+    max-width: 600px;
 }
 
-.about-text {
-    max-width: 800px;
-    /* Limit text width for readability */
+.about-text h3 {
+    margin-bottom: 20px;
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: #ddd;
+    line-height: 1.8;
+    font-size: 1.1rem;
 }
 
 .about-text h3 {
