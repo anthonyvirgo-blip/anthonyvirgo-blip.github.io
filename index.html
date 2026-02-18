@@ -57,11 +57,14 @@
     <!-- About Section -->
     <section id="about">
         <h2 class="section-title">About <span>Me</span></h2>
-        <div class="about-container">
-            <div class="about-img">
-                <img src="assets/profile.png" alt="Anthony Virgo">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <!-- Adding inline style to force layout update -->
+        <div class="about-container"
+            style="display: flex; flex-direction: row; align-items: center; gap: 50px; text-align: left;">
+            <div class="about-img" style="flex: 1; display: flex; justify-content: flex-end;">
+                <img src="assets/profile.png" alt="Anthony Virgo" style="max-width: 450px; border-radius: 12px;">
             </div>
-            <div class="about-text">
+            <div class="about-text" style="flex: 1;">
                 <h3>Bachelor of Science in Information Technology</h3>
                 <p>
                     I am currently pursuing my BSIT degree, passionate about creating intuitive and dynamic user
