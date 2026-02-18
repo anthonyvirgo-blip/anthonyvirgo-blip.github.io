@@ -473,6 +473,11 @@ footer {
     }
 
     .about-container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img {
+        justify-content: center;
     }
 }
