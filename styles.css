@@ -314,6 +314,39 @@ footer {
     border-top: 1px solid var(--border-color);
 }
 
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--card-bg);
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    /* Minimized font */
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    border-color: var(--accent-color);
+    background: rgba(0, 123, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+.contact-item i {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+}
+
 /* Lightbox - Modal Style */
 #lightbox {
     position: fixed;
